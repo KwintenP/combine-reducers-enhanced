@@ -1,0 +1,32 @@
+{
+  "name": "combine-reducers-enhanced",
+  "version": "0.0.1",
+  "description": "Extension on the combineReducers method as available in Redux libraries",
+  "license": "MIT",
+  "repository": "kwintenp/combine-reducers-enhanced",
+  "author": {
+    "name": "KwintenP",
+    "email": "kwinten.pisman@gmail.com",
+    "url": "blog.kwintenp.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "prepublish": "npm run build && cd ./release",
+    "build": "tsc -p tsconfig.json"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "nyc": "^10.0.0",
+    "typescript": "2.2.2",
+    "xo": "^0.17.0"
+  }
+}
