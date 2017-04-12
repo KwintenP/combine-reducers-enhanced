@@ -9,6 +9,23 @@
 $ npm install --save combine-reducers-enhanced
 ```
 
+## How to use
+```javascript
+import {combineReducersEnhanced} from "combine-reducers-enhanced";
+
+const rootReducer = {
+  ui: {
+      login: loginReducer,
+      main: mainReducer
+  } ,
+  data: dataReducer
+}
+
+const enhancedRootReducer = combineReducersEnhanced(rootReducer);
+
+let store: Store = new Store(enhancedRootReducer);
+```
+
 ## Reason for creation
 
 Every redux library provides us with a method called `combineReducers` (if you don't know this check the [documentation](http://redux.js.org/docs/api/combineReducers.html). This method is really helpful but has its limitations. This library was created to fix one of this limitations.
