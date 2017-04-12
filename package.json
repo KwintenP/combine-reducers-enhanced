@@ -1,6 +1,6 @@
 {
   "name": "combine-reducers-enhanced",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Extension on the combineReducers method as available in Redux libraries",
   "license": "MIT",
   "repository": "kwintenp/combine-reducers-enhanced",
@@ -13,14 +13,14 @@
     "node": ">=4"
   },
   "scripts": {
-    "prepublish": "npm run build && npm run clean && npm run copy",
-    "clean:pre": "rimraf release",
+    "prebuild": "npm run clean && npm run copy",
+    "clean": "rimraf release",
     "copy": "cpy LICENSE package.json README.md release",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "deploy": "npm run build && cd ./release && npm publish"
   },
-  "files": [
-    "index.js"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     ""
   ],
