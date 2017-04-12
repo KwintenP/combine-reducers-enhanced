@@ -9,7 +9,11 @@
 $ npm install --save combine-reducers-enhanced
 ```
 
-## Current situation
+## Reason for creation
+
+Every redux library provides us with a method called `combineReducers`. This method is really helpful but has its limitations. This library was created to fix one of this limitations.
+
+## Current situation with combineReducers
 
 During design of your state tree, you typically divide it up into different sections. F.e.
 
