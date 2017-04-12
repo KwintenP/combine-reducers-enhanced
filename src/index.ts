@@ -1,4 +1,4 @@
-export function combineReducers(reducers: any): Function {
+export function combineReducersEnhanced(reducers: any): Function {
 	const reducerKeys = Object.keys(reducers);
 	const finalReducers = {};
 
@@ -7,7 +7,7 @@ export function combineReducers(reducers: any): Function {
 		if (typeof reducers[key] === 'function') {
 			finalReducers[key] = reducers[key];
 		} else {
-			finalReducers[key] = combineReducers(reducers[key]);
+			finalReducers[key] = combineReducersEnhanced(reducers[key]);
 		}
 	}
 
