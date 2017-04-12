@@ -11,7 +11,7 @@ $ npm install --save combine-reducers-enhanced
 
 ## Reason for creation
 
-Every redux library provides us with a method called `combineReducers`. This method is really helpful but has its limitations. This library was created to fix one of this limitations.
+Every redux library provides us with a method called `combineReducers` (if you don't know this check the [documentation](http://redux.js.org/docs/api/combineReducers.html). This method is really helpful but has its limitations. This library was created to fix one of this limitations.
 
 ## Current situation with combineReducers
 
@@ -24,7 +24,7 @@ During design of your state tree, you typically divide it up into different sect
 }
 ```
 
-NGRX/Store provides the combineReducers method to easily work with such structures.
+@ngrx/store provides the `combineReducers` method to easily work with such structures.
 ## Problem description
 
 If you want to work with multiple levels of nesting in your state tree, you need to do something else F.e.
@@ -72,7 +72,7 @@ new Store(rootReducer)
 ```
 
 It's a lot cleaner than approach where you nest the combineReducers method yourself.
-This implemented by making the combineReducers function a recursive one.
+This implemented by making the combineReducers function recursive.
 
 ## License
 
