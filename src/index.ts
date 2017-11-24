@@ -13,7 +13,7 @@ export function combineReducersEnhanced<T>(reducers: any, asFunction: boolean = 
 		}
 	}
 
-	if (asFunction) {
+	if (!asFunction) {
 		return finalReducers as ActionReducerMap<T>;
 	}
 	const finalReducerKeys = Object.keys(finalReducers);

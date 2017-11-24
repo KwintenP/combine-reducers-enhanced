@@ -24,14 +24,19 @@
   "keywords": [
     ""
   ],
+  "peerDependencies": {
+    "@ngrx/store": "^4.0.0"
+  },
   "dependencies": {
-    "@ngrx/store": "^4.1.1"
   },
   "devDependencies": {
+    "@angular/core": "^5.0.0",
+    "rxjs": "^5.4.0",
     "ava": "^0.17.0",
+    "@ngrx/store": "^4.0.0",
     "cpy-cli": "1.0.1",
     "nyc": "^10.0.0",
-    "typescript": "2.2.2",
+    "typescript": "2.4.0",
     "xo": "^0.17.0"
   }
 }

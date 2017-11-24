@@ -5,6 +5,7 @@
 	"target": "es5",
 	"noImplicitAny": false,
 	"sourceMap": true,
-	"outDir": "release"
+	"outDir": "release",
+	"lib": ["es2015", "es2015.iterable", "dom"]
   }
 }
