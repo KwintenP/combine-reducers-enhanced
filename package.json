@@ -1,6 +1,6 @@
 {
   "name": "combine-reducers-enhanced",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extension on the combineReducers method as available in Redux libraries",
   "license": "MIT",
   "repository": "kwintenp/combine-reducers-enhanced",
