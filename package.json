@@ -24,7 +24,9 @@
   "keywords": [
     ""
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@ngrx/store": "^4.1.1"
+  },
   "devDependencies": {
     "ava": "^0.17.0",
     "cpy-cli": "1.0.1",

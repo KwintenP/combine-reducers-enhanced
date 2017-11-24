@@ -1,4 +1,6 @@
-export function combineReducersEnhanced(reducers: any): Function {
+import {ActionReducerMap} from '@ngrx/store';
+
+export function combineReducersEnhanced<T>(reducers: any, asFunction: boolean = true): Function | ActionReducerMap<T> {
 	const reducerKeys = Object.keys(reducers);
 	const finalReducers = {};
 
@@ -11,6 +13,9 @@ export function combineReducersEnhanced(reducers: any): Function {
 		}
 	}
 
+	if (asFunction) {
+		return finalReducers as ActionReducerMap<T>;
+	}
 	const finalReducerKeys = Object.keys(finalReducers);
 
 	return function combination(state = {}, action) {
