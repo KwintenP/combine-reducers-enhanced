@@ -26,7 +26,9 @@ const enhancedRootReducer = combineReducersEnhanced(rootReducer);
 let store: Store = new Store(enhancedRootReducer);
 ```
 
-### The description above can be used with older versions of @ngrx/store or standard redux implementations. In that scenario, the enhancedRootReducer will be a function. The newer version of @ngrx/store however expects an `ActionReducerMap`. You can get this by passing a flag false as a second parameter to the function like this:
+### Using with @ngrx/store 4+
+
+The description above can be used with older versions of @ngrx/store or standard redux implementations. In that scenario, the enhancedRootReducer will be a function. The newer version of @ngrx/store however expects an `ActionReducerMap`. You can get this by passing a flag false as a second parameter to the function like this:
 
 ```javascript
 import {combineReducersEnhanced} from "combine-reducers-enhanced";
